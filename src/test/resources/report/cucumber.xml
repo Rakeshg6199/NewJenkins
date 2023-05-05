@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="21.302" tests="4" skipped="0" failures="0" errors="0">
+<testcase classname="Verify the Hotel booking in Adactin" name="Verify the login using valid username and invalid password" time="8.493">
+<system-out><![CDATA[
+Given User is on Adactin login page.........................................passed
+When User enters "Rakeshg6199" and "Rakesh123"..............................passed
+And User Clicks on login button.............................................passed
+Then User sees Search Hotel page............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify the Hotel booking in Adactin" name="User Search for the hotel" time="3.168">
+<system-out><![CDATA[
+Given User is on search page................................................passed
+When User selects "Melbourne" location......................................passed
+And User selects "Hotel Sunshine" hotels....................................passed
+And User selects "Double" room type.........................................passed
+And User selects "3 - Three" of rooms.......................................passed
+And User enters "06/05/2023" check-In and "08/05/2023" Check-out date.......passed
+And User selects "3 - Three" adults and children "2 - Two" per room.........passed
+And User clicks on search button............................................passed
+Then User should see select hotel page......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify the Hotel booking in Adactin" name="User Select for the hotel" time="0.675">
+<system-out><![CDATA[
+Given User is on select page................................................passed
+When User click on select hotel checkbox....................................passed
+And User clicks continue button.............................................passed
+Then User sees book a hotel.................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify the Hotel booking in Adactin" name="User books a hotel" time="8.527">
+<system-out><![CDATA[
+Given User is on book hotel page............................................passed
+When User Enters "Rakesh" first name........................................passed
+And User Enters "Kumar" last name...........................................passed
+And User Enters "abc" address...............................................passed
+And User Enters Credit card "1234567891234567" number.......................passed
+And User selects credit card "Master Card" type.............................passed
+And User select expiry "February" and "2022"................................passed
+And User enters CVV "123" Number............................................passed
+And User clicks book now button.............................................passed
+Then User gets the order id.................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
